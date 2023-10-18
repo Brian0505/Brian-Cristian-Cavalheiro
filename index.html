@@ -1,0 +1,35 @@
+<!-- login -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Página de Login</title>
+    <!-- Link para o arquivo de estilo CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Div que envolve o conteúdo da página -->
+    <div class="container">
+        <!-- Título "Login" -->
+        <h2>Login</h2>
+        <!-- Formulário de login com método POST -->
+        <form action="login.php" method="post">
+            <!-- Campo de entrada para o nome de usuário -->
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <!-- Campo de entrada para a senha -->
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Botão de envio do formulário -->
+            <input type="submit" value="Entrar">
+        </form>
+        
+        <!-- Link para a página de registro -->
+        <p>Não tem uma conta? <a href="cadastro.html">Registre-se</a></p>
+    </div>
+</body>
+</html>

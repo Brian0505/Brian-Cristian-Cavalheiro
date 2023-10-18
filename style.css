@@ -1,0 +1,72 @@
+body {
+    background-color: #6845E6; /* Cor de fundo */
+    font-family: Arial, sans-serif; /* Fonte utilizada */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura da tela inteira */
+    margin: 0; /* Remova as margens padrão */
+}
+
+/* Estilo para a div com classe "container" */
+.container {
+    min-width: 300px; /* Largura mínima da div */
+    background-color: #fff; /* Cor de fundo da div */
+    padding: 4%; /* Espaçamento interno da div */
+    border: 2px solid #2C1D61; /* Borda com espessura e cor */
+    border-radius: 15px; /* Raio da borda para arredondar cantos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo para o título h2 */
+h2 {
+    color: #6845E6; /* Cor do texto */
+}
+
+/* Estilo para rótulos (labels) */
+label {
+    color: #3100E0; /* Cor do texto */
+    display: block; /* Torna os rótulos em blocos, um abaixo do outro */
+    margin-top: 10px; /* Espaço superior entre rótulos */
+}
+
+/* Estilo para campos de entrada de texto, e-mail, senha e data */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 90%; /* Largura total do container */
+    padding: 10px; /* Preenchimento interno */
+    margin: 5px 0; /* Espaço entre elementos */
+    border: 1px solid #2C1D61; /* Borda com cor */
+    border-radius: 5px; /* Raio da borda */
+}
+
+/* Estilo para botão de envio do formulário */
+input[type="submit"] {
+    background-color: #2600AD; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 10px 20px; /* Preenchimento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Raio da borda */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+/* Estilo para o botão de envio do formulário no hover (quando o mouse passa sobre ele) */
+input[type="submit"]:hover {
+    background-color: #3100E0; /* Cor de fundo alterada */
+}
+
+/* Media query para tornar o layout responsivo em telas menores (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Largura máxima do container */
+    }
+}
+
+/* Media query para telas ainda menores (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px; /* Ajuste no espaço interno da div */
+    }
+}
